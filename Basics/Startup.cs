@@ -11,8 +11,7 @@ using Microsoft.Extensions.Hosting;
 namespace Basics
 {
     public class Startup
-    {
-       
+    {     
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAuthentication("CookieAuth")
