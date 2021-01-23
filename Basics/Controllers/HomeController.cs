@@ -22,6 +22,12 @@ namespace Basics.Controllers
             return View();
         }
 
+        [Authorize(Policy = "Claim.DateOfBirth")]
+        public IActionResult SecretPolicy()
+        {
+            return View("Secret");
+        }
+
         public IActionResult Authenticate()
         {
             var grandmaClaims = new List<Claim>
