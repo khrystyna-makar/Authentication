@@ -1,1 +1,19 @@
 ﻿<h1> Home Page </h1>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h2>User is authenticated</h2>
+}
+else
+{
+    <h2>User is NOT authenticated</h2>
+}
+
+
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService authorizationService
+
+@if((await authorizationService.AuthorizeAsync(User, "Claim.DateOfBirth")).Succeeded)
+{
+    <h2>User has DateOfBirth claim</h2>
+}

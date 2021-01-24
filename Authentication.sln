@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics", "Basics\Basics.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityExample", "IdentityExample\IdentityExample.csproj", "{C2E31869-8779-4D02-9545-99E5F409D187}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "basic", "basic", "{60A7BFA3-54CF-47ED-A136-ED66ACE8E595}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "oath", "oath", "{A13A28DF-F704-49F3-A90E-AB9991AA7862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{C3072F67-3A11-4C76-BE9E-4BF5655EA586}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +27,18 @@ Global
 		{C2E31869-8779-4D02-9545-99E5F409D187}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2E31869-8779-4D02-9545-99E5F409D187}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2E31869-8779-4D02-9545-99E5F409D187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3072F67-3A11-4C76-BE9E-4BF5655EA586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3072F67-3A11-4C76-BE9E-4BF5655EA586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3072F67-3A11-4C76-BE9E-4BF5655EA586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3072F67-3A11-4C76-BE9E-4BF5655EA586}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F606489E-CFCB-41E7-9DA9-998A44EC84D6} = {60A7BFA3-54CF-47ED-A136-ED66ACE8E595}
+		{C2E31869-8779-4D02-9545-99E5F409D187} = {60A7BFA3-54CF-47ED-A136-ED66ACE8E595}
+		{C3072F67-3A11-4C76-BE9E-4BF5655EA586} = {A13A28DF-F704-49F3-A90E-AB9991AA7862}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D050AAA4-E7CD-4445-AD48-C644E185DC27}
